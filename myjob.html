@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>나에게 어울리는 직업을 알아볼까요?</title>
+</head>
+
+<body>
+    <div id="que-select" class="box-img">
+        <img class="bg-img0" src="images/background_2.jpg" alt="">
+        <h3  id="str-question" class="que-item0"></h3>
+        <img id="clickchoice-yes" src="images/yesno/yes.png" class="yes-select-itme" onclick="checklist(0)">
+        <img id="clickchoice-maybe" src="images/yesno/maybe.png" class="maybe-select-itme" onclick="checklist(1)">
+        <img id="clickchoice-no" src="images/yesno/no.png" class="no-select-itme" onclick="checklist(2)">
+    </div>
+    <div id="que-finish" class="box-img">
+        <img class="bg-img0" src="images/background_2.jpg" alt="">
+        <h3  id="str-finished" class="finish-item0"></h3>
+        <p id="str-explanation" class="finish-item1"></p>
+        <p id="job-list" class="related-job"></p>
+        <a href="trevle0.html"><img class="finish-back-btn btneffect0" src="images/back.png" alt=""></a>
+        <a href="home.html"><img class="finish-home-btn btneffect0" src="images/home.png" alt=""></a>
+        <h2 class="job-finish-title">나에게 적합한 유형은?</h2>
+        <img class="sound-img btneffect0" onclick="play_sound()" src="images/btn/sound_icon.png" alt="사운드아이콘">
+        <audio id="job_sound" src=""></audio>
+    </div>
+    <script src="js/myjob.js"></script>
+</body>
+</html>
